@@ -10,10 +10,6 @@ if (empty($_REQUEST['url']) || empty($_REQUEST['type'])) {
 $decodedUrl = @base64_decode(urldecode($_REQUEST['url']));
 //$decodedUrl = $_REQUEST['url'];
 
-if (filter_var($decodedUrl, FILTER_VALIDATE_URL) == false) {
-    die('Bad URL');
-}
-
 
 $mobileSignatures = [
     'Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36 Samsung Galaxy S6 Edge Plus',
