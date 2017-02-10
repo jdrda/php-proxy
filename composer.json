@@ -1,0 +1,20 @@
+{
+    "name": "jandrda/phpproxy",
+    "description": "Simple API / proxy solution.",
+    "keywords": ["laravel", "cms"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jan Drda",
+            "email": "jdrda@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+    }
+}
