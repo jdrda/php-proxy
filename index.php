@@ -7,8 +7,8 @@ if (empty($_REQUEST['url']) || empty($_REQUEST['type'])) {
     die('Bad parameters');
 }
 
-//$decodedUrl = @base64_decode(urlencode($_REQUEST['url']));
-$decodedUrl = $_REQUEST['url'];
+$decodedUrl = @base64_decode(urlencode($_REQUEST['url']));
+//$decodedUrl = $_REQUEST['url'];
 
 if (filter_var($decodedUrl, FILTER_VALIDATE_URL) == false) {
     die('Bad URL');
